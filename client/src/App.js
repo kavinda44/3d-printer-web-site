@@ -9,11 +9,11 @@ import LoginRegister from './Components/LoginRegister/LoginRegister';
 function App() {
   return (
     <div >
-       <LoginRegister/>
-      {/* <NavBar/>
+       {/* <LoginRegister/> */}
+      <NavBar/>
       <Hero/>
       <Home/>
-      <About/>  */}
+      <About/> 
     </div>
   );
 }
