@@ -4,16 +4,16 @@ import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Pages/HomePage/Home';
 import ParticalesBackground from './Components/Hero/ParticalesBackground';
 import About from './Components/Pages/AboutPage/About';
+import LoginRegister from './Components/LoginRegister/LoginRegister';
 
 function App() {
   return (
     <div >
-   
-     <NavBar/>
+       <LoginRegister/>
+      {/* <NavBar/>
       <Hero/>
       <Home/>
-      <NavBar/>
-      <About/>
+      <About/>  */}
     </div>
   );
 }
