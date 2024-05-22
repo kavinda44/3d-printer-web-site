@@ -1,19 +1,31 @@
-
-import Hero from './Components/Hero/Hero';
-import NavBar from './Components/NavBar/NavBar';
-import Home from './Components/Pages/HomePage/Home';
-import ParticalesBackground from './Components/Hero/ParticalesBackground';
-import About from './Components/Pages/AboutPage/About';
 import LoginRegister from './Components/LoginRegister/LoginRegister';
+import {Routes, Route} from 'react-router-dom'
+import axios from 'axios';
+import MainHome from './Components/LoginRegister/MainHome';
+import RegisterPage from './Components/LoginRegister/RegisterPage';
+import { createContext, useState} from 'react';
+
+export const Context = createContext();
+
+axios.defaults.baseURL = "http://localhost:4000/api";
+axios.defaults.withCredentials = true;
 
 function App() {
+
+  const [Authenticated, setAuthenticated] = useState(false);
   return (
     <div >
-       {/* <LoginRegister/> */}
-      <NavBar/>
-      <Hero/>
-      <Home/>
-      <About/> 
+      <Context.Provider value={[Authenticated, setAuthenticated]}>
+      <Routes>
+      {Authenticated ? (
+          <Route path='/home' element={<MainHome/>}/>
+        ) : (
+          <Route path="/" element={<LoginRegister />} />
+        )}
+          <Route path='/' element={<LoginRegister/>}/>
+          <Route path='/register' element={<RegisterPage/>}/>
+        </Routes>
+        </Context.Provider>
     </div>
   );
 }
