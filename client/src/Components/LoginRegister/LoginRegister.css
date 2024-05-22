@@ -10,6 +10,9 @@
     color: #fff;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 27%;
+    right: 40%;
    
 }
 
@@ -121,5 +124,20 @@ form .register-link{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+body{
+  
+    /* display:flex;    */
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: url('./IMG_5250.JPG')
+ no-repeat; 
+   background-size: cover;
+   background-position: center; 
+
+}
+
+
 
 

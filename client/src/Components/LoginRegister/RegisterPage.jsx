@@ -31,7 +31,7 @@ function RegisterPage() {
             
         </div>
         <button type="submit">Register</button>
-        <div className="register-link"><p>Already Have an account?<a href="/App" > Login </a></p></div>
+        <div className="register-link"><p>Already Have an account?<a href="/login" > Login </a></p></div>
     </form>
 
 </div>
