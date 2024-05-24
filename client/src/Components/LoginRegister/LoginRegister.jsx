@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import React, { useContext, useState , useEffect } from 'react';
+import { Navigate , useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import './LoginRegister.css'
 import { FaUser } from "react-icons/fa";
@@ -14,6 +14,29 @@ const LoginRegister = () => {
     const [Redirect, setRedirect] = useState(false);
     const [errors, seterrors] = useState({});
     const [Authenticated, setAuthenticated] = useContext(Context);
+    const navigate = useNavigate();
+
+    console.log("oncw 2")
+
+    // useEffect(() => {
+    //     try {
+    //       axios.get('/login').then((data) => {
+    //         alert(data)
+    //         console.log(data)
+    //         if(data.status === 200) {
+    //           setAuthenticated(true)
+    //           navigate('/home'); 
+    //           console.log("this works ")
+    //         }
+    
+              
+              
+    //       });
+      
+    //     } catch (error) {
+    //       console.log("error occc"+ error)
+    //     } 
+    // },[]); 
 
     const successlogin = async (e) => {
         e.preventDefault();
@@ -57,6 +80,8 @@ const LoginRegister = () => {
     if(Redirect){
         return <Navigate to={'/home'} />
     }
+
+    
    
   return (
     <div className='wrapper'>

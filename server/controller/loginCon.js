@@ -29,17 +29,19 @@ const findregistered = async (req,res) => {
 
 const tokencheck = async (req,res) => {
     try {
-        const token = await req.cookies;
+        const token = req.cookies.token;
         if(token) {
             jwt.verify(token, jwtsecret, {}, (err, user) => {
                 if (err) throw err;
-                res.status(200).send(user);
+                res.send(user);
+                console.log("t")
             });
-            res.json(user);
+            // res.json(user);
             console.log("token exits")
         }else {
             res.json(null);
         }
+        // console.log("what ever token "+token)
     } catch (error) {
         console.log(error)
     }

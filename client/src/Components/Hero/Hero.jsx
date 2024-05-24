@@ -5,6 +5,7 @@ import ParticalesBackground from './ParticalesBackground'
 
 
 const Hero = () => {
+  console.log("this")
   return (
 
     <div className='hero container'>

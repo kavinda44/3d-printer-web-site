@@ -6,11 +6,9 @@ import { loadFull } from "tsparticles";
 const ParticalesBackground = () => {
     const particlesInit = async (main) => {
         console.log(main);
+        console.log("this is called twice")
         await loadFull(main);
       };
-
-      
-
 
   return (
     

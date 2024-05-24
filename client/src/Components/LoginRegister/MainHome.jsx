@@ -8,21 +8,25 @@ import { Context } from '../../App'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 function MainHome() {
-//   const [user, setUser] = useState(null);
-//   const [Authenticated, setAuthenticated] = useContext(Context);
-//   const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [Authenticated, setAuthenticated] = useContext(Context);
+  const navigate = useNavigate();
 
-//   useEffect((e) => {
-//     e.preventDefault();
+//   useEffect(() => {
 //     try {
-//       axios.get('/login').then((data) => {
-//         alert(data.status)
-//         if(data.status === 200) {
+//       axios.get('/').then((data) => {
+//         // alert(data.data)
+//         // console.log(data.data)
+//         // if(data.status === 200) {
+//         //   setAuthenticated(true)
+//         //   navigate('/home'); 
+//         //   console.log("this works ")
+//         // }
+//         if(data.data){
 //           setAuthenticated(true)
 //           navigate('/home'); 
-//           console.log("this works ")
+//           console.log("setting auth")
 //         }
-
           
           
 //       });
@@ -30,7 +34,29 @@ function MainHome() {
 //     } catch (error) {
 //       console.log("error occc"+ error)
 //     } 
-// });   
+// },[]); 
+  
+// const clikc = () => {
+//   axios.get('/').then((data) => {
+//     // alert(data.data)
+//     // console.log(data.data)
+//     // if(data.status === 200) {
+//     //   setAuthenticated(true)
+//     //   navigate('/home'); 
+//     //   console.log("this works ")
+//     // }
+//     if(data.data){
+//       setAuthenticated(true)
+//       navigate('/home'); 
+//       console.log("setting auth2 " + data.data)
+//     }
+      
+      
+//   });
+// }
+
+    
+console.log("once")
   return (
     <>
     <NavBar/>
