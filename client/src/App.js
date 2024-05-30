@@ -49,7 +49,7 @@ function App() {
         )} */}
           <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
           <Route path='/' element={<Contact/>}/>
-          <Route path='/register' element={<RegisterPage/>}/>
+          <Route path='/register' element={<Contact/>}/>
         </Routes>
         </Context.Provider>
     </div>
