@@ -46,6 +46,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import conT from "./conT.jpg"
 
 
 
@@ -76,7 +77,7 @@ const Contact = () => {
   return (
     <div className="Container">
         <div className="image-container">
-        <img className="con" src="./conT.jpg" alt="were"/>
+        <img className="con" src={conT} alt=""/>
       </div>
     <div className="wrapper">
        
