@@ -79,7 +79,7 @@ const Contact = () => {
         <div className="image-container">
         <img className="con" src={conT} alt=""/>
       </div>
-    <div className="wrapper">
+    <div className="wrapper2">
        
       <div className="form-box">
         <form ref={form} onSubmit={sendEmail}>

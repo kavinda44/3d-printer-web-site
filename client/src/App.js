@@ -2,7 +2,7 @@ import LoginRegister from './Components/LoginRegister/LoginRegister';
 import {Routes, Route, Navigate, useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import MainHome from './Components/LoginRegister/MainHome';
-import RegisterPage from './Components/LoginRegister/RegisterPage';
+// import RegisterPage from './Components/LoginRegister/RegisterPage';
 import { createContext, useState, useEffect} from 'react';
 import Contact from './Components/Pages/ContactPage/Contact';
 
