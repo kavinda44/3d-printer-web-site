@@ -65,7 +65,7 @@
     align-items: center;
     position: absolute;
     top: 27%;
-    right: 40%;
+    right: 30%;
   }
   
   .wrapper .form-box {
@@ -172,13 +172,20 @@
   }
 
   .con{
-    width: 100px;
-    height: 100px;
+    width: 430px;
+    height: 445px;
+    margin-left: 27.5%;
+  margin-top: 272px;
+  opacity: 75%;
+  
+  
+
   }
 
   .image-container{
     height: 100px;
   }
+  
 
  
 
