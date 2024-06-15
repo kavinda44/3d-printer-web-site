@@ -13,6 +13,7 @@
 .hero-text{
     text-align: center;
     max-width: 800px;
+    /* border: 1px white solid; */
 
 }
 .hero-text h1{
@@ -32,9 +33,14 @@
   }
 
   .stat{
-    margin-top: 800px;
+    /* margin-top: 800px;
     margin-left: 10px;
     margin: 0%;
-    padding: 0%;
+    padding: 0%; */
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    
+    /* border: 1px white solid; */
 
   }

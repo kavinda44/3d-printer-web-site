@@ -15,6 +15,7 @@ const Hero = () => {
       <div className='particles-container'>
         <ParticalesBackground/>
       </div>
+      {/* <div className="stat"> */}
       <div className="hero-text">
         <h1>Join our community and start creating today!</h1>
         <p>Unleash your creativity with our state-of-the-art 3D printing solutions. 
@@ -23,9 +24,12 @@ const Hero = () => {
         <button className='btn'> Explore more <img src={dark_arrow} alt="" /></button>
         
       </div>
+      {/* </div> */}
+      
       <div className='stat'>
       <Stat/>
       </div>
+      
       
       
     </div>
