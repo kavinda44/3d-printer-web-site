@@ -1,0 +1,95 @@
+/* .mainstatwrap{
+
+    background: rgb(0, 0, 0);
+    
+    color: rgb(255, 252, 252);
+    z-index: 1;
+    position: relative;
+    margin-top: 850PX;
+    margin-left: 0;
+    margin-right: 20%;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    
+
+} */
+/* .main-container{
+    justify-content: space-between;
+    align-items: flex-end;
+} */
+/* 
+.flexCenter{
+    background-color: black;
+    margin-top: 850PX;
+    
+   
+}
+
+  .stats1{
+    width: 35%;
+    position: absolute;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+  }
+
+  .stat1>:nth-child(1)
+  {
+      font-size: 2rem;
+  }
+  .stat1>:nth-child(1)>:last-child{
+      color: orange;
+  } */
+  .mainstatwrap {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa; /* Light background for contrast */
+    margin-top: 600px;
+    
+    
+  }
+  
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between each stat */
+  }
+  
+  .flexColCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stat1 {
+    padding: 1rem;
+    background: #fff; /* White background for each stat block */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    transition: transform 0.3s ease;
+  }
+  
+  .stat1:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .stat1 span:first-child {
+    font-size: 2rem; /* Larger font for the number */
+    font-weight: bold;
+    color: #333; /* Darker color for the number */
+  }
+  
+  .secondaryText {
+    font-size: 1rem; /* Smaller font for the secondary text */
+    color: #777; /* Gray color for the secondary text */
+    margin-top: 0.5rem;
+  }
+  
+  

@@ -3,6 +3,9 @@ import './Hero.css'
 import dark_arrow from './dark-arrow.png'
 import ParticalesBackground from './ParticalesBackground'
 
+import Stat from '../Stat/Stat';
+
+
 
 const Hero = () => {
   console.log("this")
@@ -18,7 +21,13 @@ const Hero = () => {
         Whether you're a hobbyist or designer we provide the tools and resources you need to bring your ideas to life. 
     </p>
         <button className='btn'> Explore more <img src={dark_arrow} alt="" /></button>
+        
       </div>
+      <div className='stat'>
+      <Stat/>
+      </div>
+      
+      
     </div>
   )
 }
