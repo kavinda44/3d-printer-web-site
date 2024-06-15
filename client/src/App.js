@@ -7,6 +7,7 @@ import { createContext, useState, useEffect} from 'react';
 import Contact from './Components/Pages/ContactPage/Contact';
 
 
+
 export const Context = createContext();
 
 axios.defaults.baseURL = "http://localhost:4000/api";
@@ -49,7 +50,7 @@ function App() {
           <Route path='/' element={<LoginRegister/>}/>
         )} */}
           <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
-          <Route path='/' element={<LoginRegister/>}/>
+          <Route path='/' element={<Contact/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
         </Routes>
         </Context.Provider>
