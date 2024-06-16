@@ -5,6 +5,7 @@ import MainHome from './Components/LoginRegister/MainHome';
 import RegisterPage from './Components/LoginRegister/RegisterPage';
 import { createContext, useState, useEffect} from 'react';
 import Contact from './Components/Pages/ContactPage/Contact';
+import AboutUs from './Components/Pages/AboutUsPage/AboutUs';
 
 
 
@@ -50,7 +51,7 @@ function App() {
           <Route path='/' element={<LoginRegister/>}/>
         )} */}
           <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
-          <Route path='/' element={<Contact/>}/>
+          <Route path='/' element={<AboutUs/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
         </Routes>
         </Context.Provider>
