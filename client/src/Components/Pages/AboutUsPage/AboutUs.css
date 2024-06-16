@@ -1,16 +1,6 @@
-/* AboutUs.css */
-
 .section-white {
-    background-color: #000000;
     padding: 60px 0;
     color: #fff;
-}
-
-.container_abt {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .raw_abt {
@@ -32,118 +22,39 @@
 
 .section-subtitle {
     font-size: 18px;
-    margin-bottom: 40px;
-    white-space: pre-line; /* Allows \n in message to create new lines */
-}
-
-.col-md-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 15px;
-}
-
-.col-md-4 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-}
-
-.team-item {
-    /* position: relative;
-    height: 400px;
-    width: 100%;
-    max-width:300px;
-    background-color: #000000;
-     margin-left: 150px; 
-     margin-right:150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid#000; */
-    /* background-color: #ffffff; */
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    margin: 0px 1em 2em 1em;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid#F2B236;
-    
-    
-    
-  
+    text-shadow: 0px 0px 5px #000;
 }
 
-.team-img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.team-item h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.team-info {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.team-info p {
-    margin-bottom: 10px;
-}
-
-.team-icon {
-    list-style: none;
-    padding: 0;
+.team-item-container {
+    -webkit-overflow-scrolling: touch;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 80%;
 }
 
-.team-icon li {
-    display: inline-block;
+.team-item-container::-webkit-scrollbar {
+    height: 7px;
 }
 
-.team-icon a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    background-color: #ddd;
-    color: #fff;
-    font-size: 18px;
-    transition: background-color 0.3s;
+.team-item-container::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 10px;
 }
 
-.team-icon a:hover {
-    background-color: #555;
+.team-item-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, rgba(123, 82, 0, 0.8), rgba(242, 178, 54, 0.8));
+    border-radius: 10px;
+    transition: background 1s ease-in-out;
 }
 
-.team-icon .twitter {
-    background-color: #1da1f2;
+.team-item-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to left, rgba(123, 82, 0), rgba(242, 178, 54));
 }
 
-.team-icon .instagram {
-    background-color: #e1306c;
-}
-
-.team-icon .linkedin {
-    background-color: #0077b5;
-}
-
-.prof_name{
-    color: #F2B236;
-}
-
-.nova_h2{
-    color: #F2B236;
+.team-item-container::-webkit-scrollbar-corner {
+    background: #f1f1f1;
 }
