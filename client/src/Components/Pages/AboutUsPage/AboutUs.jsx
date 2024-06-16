@@ -77,6 +77,7 @@ function AboutUs() {
           {teamMembers.map(
             ({ memberName, memberImage, memberTitle, memberDesc }, index) => (
               <TeamItem
+                key={index}
                 memberName={memberName}
                 memberImage={memberImage}
                 memberTitle={memberTitle}
