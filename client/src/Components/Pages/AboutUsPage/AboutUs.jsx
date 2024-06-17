@@ -4,7 +4,12 @@ import "./AboutUs.css";
 import kavindaPic from "./kavinda.png";
 import lahiruPic from "./lahiru.png";
 import brianPic from "./brian.png";
+import shehanPic from "./shehan.png";
+import resanduPic from "./resandu.png";
+import chanukaPic from "./chanuka.png"; 
+import kanchanaPic from "./kanchana.png"; 
 import TeamItem from "./TeamItem";
+
 
 function AboutUs() {
   let message =
@@ -19,28 +24,28 @@ function AboutUs() {
     },
     {
       memberName: "Chanuka Wanigasekara",
-      memberImage: kavindaPic,
+      memberImage:  chanukaPic,
       memberTitle: "CEO",
       memberDesc:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       memberName: "Chanuka Wijesooriya",
-      memberImage: kavindaPic,
+      memberImage:  kanchanaPic,
       memberTitle: "CEO",
       memberDesc:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       memberName: "Resandu Udagedara",
-      memberImage: kavindaPic,
+      memberImage: resanduPic,
       memberTitle: "CEO",
       memberDesc:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       memberName: "Shehan Bandara",
-      memberImage: kavindaPic,
+      memberImage: shehanPic,
       memberTitle: "CEO",
       memberDesc:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

@@ -10,6 +10,7 @@
     padding: 30px;
     position: relative;
     text-align: center;
+
 }
 
 .member-name {
@@ -52,7 +53,7 @@
 
 .member-desc {
     margin-bottom: 70px;
-    text-align: justify;
+    text-align: center;
 }
 
 .social-media-icon-container {

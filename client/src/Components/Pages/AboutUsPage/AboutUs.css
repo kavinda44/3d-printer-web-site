@@ -18,6 +18,7 @@
     font-weight: 700;
     margin-bottom: 20px;
     color: #F2B236;
+   
 }
 
 .section-subtitle {
@@ -25,6 +26,7 @@
     margin: 0px 1em 2em 1em;
     text-align: center;
     text-shadow: 0px 0px 5px #000;
+   
 }
 
 .team-item-container {
@@ -34,6 +36,8 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     width: 80%;
+    
+  
 }
 
 .team-item-container::-webkit-scrollbar {
@@ -43,6 +47,7 @@
 .team-item-container::-webkit-scrollbar-track {
     background: #000;
     border-radius: 10px;
+   
 }
 
 .team-item-container::-webkit-scrollbar-thumb {
@@ -53,6 +58,7 @@
 
 .team-item-container::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to left, rgba(123, 82, 0), rgba(242, 178, 54));
+    cursor: pointer;
 }
 
 .team-item-container::-webkit-scrollbar-corner {
