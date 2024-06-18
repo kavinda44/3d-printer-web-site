@@ -25,7 +25,7 @@ function MainHome() {
 //         if(data.data){
 //           setAuthenticated(true)
 //           navigate('/home'); 
-//           console.log("setting auth")
+//           console.log("setting auth main")
 //         }
           
           

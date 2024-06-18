@@ -13,45 +13,48 @@ axios.defaults.baseURL = "http://localhost:4000/api";
 axios.defaults.withCredentials = true;
 
 function App() {
-  //   const [Authenticated, setAuthenticated] = useState(false);
-  //   const navigate = useNavigate();
+    const [Authenticated, setAuthenticated] = useState(false);
+    const navigate = useNavigate();
 
-  //   useEffect(() => {
-  //     try {
-  //       axios.get('/').then((data) => {
-  //         // alert(data.data)
-  //         // console.log(data.data)
-  //         // if(data.status === 200) {
-  //         //   setAuthenticated(true)
-  //         //   navigate('/home');
-  //         //   console.log("this works ")
-  //         // }
-  //         if(data.data){
-  //           setAuthenticated(true)
-  //           navigate('/home');
-  //           console.log("setting auth")
-  //         }
+    useEffect(() => {
+      try {
+        axios.get('/').then((data) => {
+          // alert(data.data)
+          // console.log(data.data)
+          // if(data.status === 200) {
+          //   setAuthenticated(true)
+          //   navigate('/home');
+          //   console.log("this works ")
+          // }
+          if(data.data){
+            setAuthenticated(true)
+            navigate('/home');
+            console.log("setting auth app")
+          }
 
-  //       });
+        });
 
-  //     } catch (error) {
-  //       console.log("error occc"+ error)
-  //     }
-  // },[]);
+      } catch (error) {
+        console.log("error occc"+ error)
+      }
+  },[]);
+
   return (
     <div>
-      {/* <Context.Provider value={[Authenticated, setAuthenticated]}> */}
+      <Context.Provider value={[Authenticated, setAuthenticated]}>
       <Routes>
         {/* {Authenticated ? (
           <Route path='/home' element={<MainHome/>}/>
         ) : (
           <Route path='/' element={<LoginRegister/>}/>
         )} */}
-        {/* <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/> */}
-        <Route path="/" element={<AboutUs />} />
-        {/* <Route path='/register' element={<RegisterPage/>}/> */}
+        <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
+        <Route path='/about' element={Authenticated ? <AboutUs /> : <Navigate to="/" />}/>
+        <Route path='/contact' element={Authenticated ? <Contact/> : <Navigate to="/" />}/>
+        <Route path='/' element={<LoginRegister/>}/>
+        <Route path='/register' element={<RegisterPage/>}/>
       </Routes>
-      {/* </Context.Provider> */}
+      </Context.Provider>
     </div>
   );
 }

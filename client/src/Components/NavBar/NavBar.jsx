@@ -3,7 +3,7 @@ import './NavBar.css'
 import logo from './logo.PNG'
 import axios from 'axios'
 import { Context } from '../../App'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
 
@@ -22,9 +22,9 @@ const NavBar = () => {
     <nav className='maincontainer'>
         <img src={logo} alt="" className='logo'/>
         <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact us</li>
+            <li><Link to={'/home'}>Home</Link></li>
+            <li><Link to={'/about'}>About us</Link></li>
+            <li><Link to={'/contact'}>Contact us</Link></li>
             <li><button className='btn' onClick={singout}>Sign Out</button></li>
             
             
