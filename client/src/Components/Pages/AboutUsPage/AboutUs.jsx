@@ -13,7 +13,7 @@ import TeamItem from "./TeamItem";
 
 function AboutUs() {
   let message =
-    "Meet the visionary team behind Nova, driving innovation and excellence in the 3D printing industry. Our diverse expertise spans IoT, engineering, and design, united by a passion for pushing boundaries and delivering exceptional solutions.";
+    "Meet the visionary team behind Nova, a pioneering force in the 3D printing industry. Our team is dedicated to driving innovation and excellence, leveraging cutting-edge technology and creative design to push the boundaries of what's possible. With expertise spanning IoT, engineering, and design, we bring a unique blend of skills and knowledge to every project.";
   const teamMembers = [
     {
       memberName: "Geeneth Madagedara",

@@ -21,3 +21,15 @@ nav ul li{
     margin: 5px 20px;
     font-size: 16px;
 }
+
+.hm:hover {
+    transform: translateY(-5px); 
+  }
+
+  .au:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+
+  .cu:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }

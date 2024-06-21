@@ -10,8 +10,12 @@
     padding: 30px;
     position: relative;
     text-align: center;
+    transition: transform 0.3s ease;
 
 }
+.team-item:hover {
+    transform: translateX(10px); /* Slight lift on hover */
+  }
 
 .member-name {
     color: #F2B236;

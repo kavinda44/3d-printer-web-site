@@ -22,9 +22,9 @@ const NavBar = () => {
     <nav className='maincontainer'>
         <img src={logo} alt="" className='logo'/>
         <ul>
-            <li><Link to={'/home'}>Home</Link></li>
-            <li><Link to={'/about'}>About us</Link></li>
-            <li><Link to={'/contact'}>Contact us</Link></li>
+            <li className='hm'><Link to={'/home'}>Home</Link></li>
+            <li className='au'><Link to={'/about'}>About us</Link></li>
+            <li className='cu'><Link to={'/contact'}>Contact us</Link></li>
             <li><button className='btn' onClick={singout}>Sign Out</button></li>
             
             

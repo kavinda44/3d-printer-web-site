@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .text-center {
@@ -36,6 +37,7 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     width: 80%;
+   
     
   
 }
