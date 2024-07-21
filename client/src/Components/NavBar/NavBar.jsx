@@ -15,7 +15,7 @@ const NavBar = () => {
     const ress = await axios.post('/logout');
     if(ress.status === 200){
       setAuthenticated(false)
-      navigate('/'); 
+      navigate('/');
     }
   }
   return (
@@ -23,11 +23,10 @@ const NavBar = () => {
         <img src={logo} alt="" className='logo'/>
         <ul>
             <li className='hm'><Link to={'/home'}>Home</Link></li>
+            <li className='hm'><Link to={'/store'}>Store</Link></li>
             <li className='au'><Link to={'/about'}>About us</Link></li>
             <li className='cu'><Link to={'/contact'}>Contact us</Link></li>
             <li><button className='btn' onClick={singout}>Sign Out</button></li>
-            
-            
         </ul>
     </nav>
   )
