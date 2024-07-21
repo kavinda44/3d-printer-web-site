@@ -6,6 +6,7 @@ import RegisterPage from "./Components/LoginRegister/RegisterPage";
 import { createContext, useState, useEffect } from "react";
 import Contact from "./Components/Pages/ContactPage/Contact";
 import AboutUs from "./Components/Pages/AboutUsPage/AboutUs";
+import Store from "./Components/Pages/StorePage/Store";
 
 export const Context = createContext();
 
@@ -51,6 +52,7 @@ function App() {
         <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
         <Route path='/about' element={Authenticated ? <AboutUs /> : <Navigate to="/" />}/>
         <Route path='/contact' element={Authenticated ? <Contact/> : <Navigate to="/" />}/>
+        <Route path='/store' element={Authenticated ? <Store/> : <Navigate to="/" />}/>
         <Route path='/' element={<LoginRegister/>}/>
         <Route path='/register' element={<RegisterPage/>}/>
       </Routes>
