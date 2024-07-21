@@ -76,14 +76,12 @@ const Contact = () => {
 
   return (
     <div className="Container">
-        <div className="image-container">
-        <img className="con" src={conT} alt=""/>
-      </div>
+        
     <div className="wrapper2">
        
       <div className="form-box">
         <form ref={form} onSubmit={sendEmail}>
-          <h1>Contact Us</h1>
+          <h1 className="con_h1">Contact Us</h1>
           <div className="input-box">
             <input type="text" name="to_name" placeholder="Name" />
           </div>
@@ -93,7 +91,7 @@ const Contact = () => {
           <div className="input-box">
             <textarea name="message" placeholder="Message" />
           </div>
-          <button type="submit">Send</button>
+          <button className="but_con" type="submit">Send</button>
           <div className="register-link">
             <p>
               <a href="/">Back to Home</a>

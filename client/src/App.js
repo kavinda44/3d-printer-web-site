@@ -6,6 +6,8 @@ import RegisterPage from "./Components/LoginRegister/RegisterPage";
 import { createContext, useState, useEffect } from "react";
 import Contact from "./Components/Pages/ContactPage/Contact";
 import AboutUs from "./Components/Pages/AboutUsPage/AboutUs";
+import { Product } from './Components/Pages/ProductPage/Product';
+import  contents  from './Components/Pages/ProductPage/contents';
 
 export const Context = createContext();
 
@@ -48,12 +50,27 @@ function App() {
         ) : (
           <Route path='/' element={<LoginRegister/>}/>
         )} */}
+        
         <Route path='/home' element={Authenticated ? <MainHome /> : <Navigate to="/" />}/>
         <Route path='/about' element={Authenticated ? <AboutUs /> : <Navigate to="/" />}/>
         <Route path='/contact' element={Authenticated ? <Contact/> : <Navigate to="/" />}/>
         <Route path='/' element={<LoginRegister/>}/>
         <Route path='/register' element={<RegisterPage/>}/>
-      </Routes>
+
+{/* <Route path='/' element={contents.map(contents => (
+                    <Product 
+                        key={contents.id}
+                        image={contents.image}
+                        name={contents.name}
+                        price={contents.price}
+                        totalSales={contents.totalSales}
+                        timeLeft={contents.timeLeft}
+                        rating={contents.rating}
+                    />
+                ))}/> */}
+
+
+      </Routes> 
       </Context.Provider>
     </div>
   );
