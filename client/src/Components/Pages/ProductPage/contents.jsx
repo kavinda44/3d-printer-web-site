@@ -29,7 +29,7 @@ const productData = [
         "https://e7.pngegg.com/pngimages/641/378/png-clipart-liquid-crystal-3d-printing-groot-printer-electronics-3d-printing-thumbnail.png",
       productType: "openBackHeadphones",
       price: 5,
-      rating: 5,
+      rating: 4,
       timeLeft: 21,
       totalSales: 6347 
     } 
