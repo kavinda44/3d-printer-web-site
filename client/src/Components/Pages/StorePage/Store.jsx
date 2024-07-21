@@ -7,7 +7,8 @@ import  contents  from '../ProductPage/contents';
 const Store = () => {
     return (
         <div>
-            <NavBar/>
+          
+            <div className="productTiles">
             {contents.map(contents => (
                     <Product 
                         key={contents.id}
@@ -19,6 +20,8 @@ const Store = () => {
                         rating={contents.rating}
                     />
                 ))}
+            </div>
+           
 
         </div>
     );
