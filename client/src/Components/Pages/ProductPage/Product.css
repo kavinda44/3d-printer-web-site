@@ -107,23 +107,28 @@
   .productCard {
     position:relative;
     width: 300px;
-    background-color: #fff;
+    background-color:black;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #F2B236;
   }
   
   .productCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
   }
   
   .productImage {
     margin-top: 2rem;
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    width: 200px;
+    /* height: auto; */
     background-color: transparent;
+ 
+    
   }
   
   .productCard__cart,
@@ -161,7 +166,7 @@
   
   .productName {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
   }
   
@@ -176,18 +181,19 @@
   .productPrice {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
   }
   
   .productSales,
   .productTime {
     font-size: 0.9rem;
-    color: #777;
+    color: #ffffff;
   }
   
   .productRating {
     display: flex;
     gap: 5px;
+    color: white;
   }
   
   .productRating .fa-star {
