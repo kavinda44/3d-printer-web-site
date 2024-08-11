@@ -127,16 +127,84 @@ form .register-link{
 
 body{
   
-    /* display:flex;    */
+    
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   /* background: url('./IMG_5250.JPG')
- no-repeat;  */
+   
    background-size: cover;
    background-position: center; 
 
 }
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        right: 5%;
+        top: 20%;
+    }
+
+    form h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        height: 45px;
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .input-box .icon {
+        font-size: 14px;
+    }
+
+    form button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .register-link p {
+        font-size: 12.5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        top: 15%;
+        padding: 10px;
+    }
+
+    form h1 {
+        font-size: 24px;
+    }
+
+    .input-box {
+        margin: 15px 0;
+    }
+
+    .input-box input {
+        padding: 10px 35px 10px 10px;
+    }
+
+    form button {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .register-link p {
+        font-size: 12px;
+    }
+}
+
 
 
 

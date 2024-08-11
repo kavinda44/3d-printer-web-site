@@ -96,6 +96,8 @@
     font-size: 1.1rem;
   } */
 
+
+  
   .productList {
     display: flex;
     flex-wrap: wrap;
@@ -107,12 +109,12 @@
   .productCard {
     position:relative;
     width: 300px;
-    background-color:black;
+    background-color:white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #F2B236;
+    border: 8px solid #F2B236;
   }
   
   .productCard:hover {
@@ -166,7 +168,7 @@
   
   .productName {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: black;
     margin-bottom: 10px;
   }
   
@@ -181,19 +183,19 @@
   .productPrice {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: black;
   }
   
   .productSales,
   .productTime {
     font-size: 0.9rem;
-    color: #ffffff;
+    color: black;
   }
   
   .productRating {
     display: flex;
     gap: 5px;
-    color: white;
+    color: black;
   }
   
   .productRating .fa-star {
