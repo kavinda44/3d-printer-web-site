@@ -7,8 +7,9 @@ import NavBar from "../NavBar/NavBar";
 import Hero from "../Hero/Hero";
 import Home from "../Pages/HomePage/Home";
 import About from "../Pages/AboutPage/About";
+import Cart from "../Cart/Cart";
 
-function MainHome() {
+function MainHome({ cartIsVisible, toggleCartVisibility }) {
   const [user, setUser] = useState(null);
   const [Authenticated, setAuthenticated] = useContext(Context);
   const navigate = useNavigate();
@@ -57,10 +58,11 @@ function MainHome() {
   console.log("once");
   return (
     <>
-      <NavBar />
+      <NavBar toggleCartVisibility={toggleCartVisibility} />
       <Hero />
       <Home />
       <About />
+      {cartIsVisible && <Cart toggleCartVisibility={toggleCartVisibility} />}
     </>
   );
 }

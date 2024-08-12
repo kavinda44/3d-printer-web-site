@@ -10,7 +10,7 @@ export function Product(props) {
   return (
     <div className="productList">
       <div key={props.id} className="productCard">
-        <img src={props.image} alt="product-img" className="productImage"></img>
+        <img src={props.image} alt="product-img" className="productImage" />
 
         <FaShoppingCart className={"productCard__cart"} />
         <FaRegBookmark className={"productCard__wishlist"} />

@@ -1,68 +1,65 @@
 .section-white {
-    padding: 60px 0;
-    color: #fff;
+  padding: 60px 0;
+  color: #fff;
 }
 
 .raw_abt {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #F2B236;
-   
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f2b236;
 }
 
 .section-subtitle {
-    font-size: 18px;
-    margin: 0px 1em 2em 1em;
-    text-align: center;
-    text-shadow: 0px 0px 5px #000;
-   
+  font-size: 18px;
+  margin: 0px 1em 2em 1em;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000;
 }
 
 .team-item-container {
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    width: 80%;
-   
-    
-  
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 80%;
 }
 
 .team-item-container::-webkit-scrollbar {
-    height: 7px;
+  height: 7px;
 }
 
 .team-item-container::-webkit-scrollbar-track {
-    background: #000;
-    border-radius: 10px;
-   
+  background: #000;
+  border-radius: 10px;
 }
 
 .team-item-container::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, rgba(123, 82, 0, 0.8), rgba(242, 178, 54, 0.8));
-    border-radius: 10px;
-    transition: background 1s ease-in-out;
+  background: linear-gradient(
+    to left,
+    rgba(123, 82, 0, 0.8),
+    rgba(242, 178, 54, 0.8)
+  );
+  border-radius: 10px;
+  transition: background 1s ease-in-out;
 }
 
 .team-item-container::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to left, rgba(123, 82, 0), rgba(242, 178, 54));
-    cursor: pointer;
+  background: linear-gradient(to left, rgba(123, 82, 0), rgba(242, 178, 54));
+  cursor: pointer;
 }
 
 .team-item-container::-webkit-scrollbar-corner {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }

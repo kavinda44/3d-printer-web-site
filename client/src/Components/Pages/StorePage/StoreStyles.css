@@ -1,3 +1,38 @@
-.productTiles{
-    display: flex;
+.productTiles {
+  display: flex;
+}
+
+.store-container {
+  margin-top: 100px;
+  color: white;
+}
+
+.store-container > h1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0px 5vw;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.store-container > p {
+  padding: 0px 5vw;
+  margin-top: 0px;
+}
+
+.item-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .store-container > h1 {
+    padding: 0px 10vw;
+  }
+  .store-container > p {
+    padding: 0px 10vw;
+  }
 }

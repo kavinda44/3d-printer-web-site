@@ -1,7 +1,7 @@
 import CartItem from "./CartItem";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = ({ toggleCartVisibility }) => {
   return (
     <section className="cart">
       <div className="cart-header">
@@ -20,7 +20,7 @@ const Cart = () => {
           <p>Rs.5000.00</p>
         </div>
         <button>Checkout</button>
-        <button>Close cart</button>
+        <button onClick={toggleCartVisibility}>Close cart</button>
       </div>
     </section>
   );

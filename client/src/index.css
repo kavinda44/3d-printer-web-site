@@ -11,6 +11,10 @@ body {
   background: url("./Components/Assets/IMG_5250.JPG") no-repeat;
 }
 
+app-container {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: inherit;

@@ -7,7 +7,7 @@ import { IoMdCart } from "react-icons/io";
 import logo from "./logo.PNG";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ toggleCartVisibility }) => {
   const [, setAuthenticated] = useContext(Context);
   const [visible, setVisible] = useState(true);
   const [isToggled, setIsToggled] = useState(false);
@@ -96,7 +96,7 @@ const NavBar = () => {
           </ul>
         )}
       </nav>
-      <div className="cart-icon">
+      <div className="cart-icon" onClick={toggleCartVisibility}>
         <IoMdCart />
       </div>
     </header>
