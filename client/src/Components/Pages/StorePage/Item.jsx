@@ -5,10 +5,26 @@ import {
   FaFireAlt,
 } from "react-icons/fa";
 import "./Item.css";
+import React, { useContext} from 'react';
+import { Context } from '../../../App';
+import { Link } from 'react-router-dom';
 
-const Item = ({ image, name, price, rating }) => {
+const Item = ({ image, name, price, rating, description, ino}) => {
+
+  const {setIde, setName, setDes, setImage, setPrice} = useContext(Context);
+
+  const lestgo = () => {
+    setIde(ino);
+    setName(name);
+    setDes(description);
+    setImage(image);
+    setPrice(price);
+  }
+
   return (
-    <div className="product-item-container">
+    <>
+    
+    <Link to={'/product'}><div className="product-item-container" onClick={lestgo}>
       <div className="product-item-icons">
         <FaFireAlt className="icon" />
         <div>
@@ -21,7 +37,7 @@ const Item = ({ image, name, price, rating }) => {
       </div>
       <div className="product-item-description">
         <h3>{name}</h3>
-        <p>{price}</p>
+        <p>Rs {price}</p>
         <div className="product-item-rating">
           {[...Array(rating)].map((index) => (
             <FaStar id={index + 1} key={index} />
@@ -29,6 +45,9 @@ const Item = ({ image, name, price, rating }) => {
         </div>
       </div>
     </div>
+    </Link>
+    
+    </>
   );
 };
 

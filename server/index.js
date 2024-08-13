@@ -24,9 +24,7 @@ const main = async () => {
   try {
     await app.listen(4000);
     console.log("server works on port 4000");
-    mongoose.connect(
-      "mongodb+srv://dominic91960:undertaker0@cluster0.e7rl39w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    );
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("database connected");
   } catch (error) {
     console.log(error);

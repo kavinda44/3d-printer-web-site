@@ -13,7 +13,8 @@ const LoginRegister = () => {
     const [Logpassword, setLogpassword] = useState('');
     const [Redirect, setRedirect] = useState(false);
     const [errors, seterrors] = useState({});
-    const [Authenticated, setAuthenticated] = useContext(Context);
+    // const [Authenticated, setAuthenticated] = useContext(Context);
+    const {setAuthenticated} = useContext(Context);
     const navigate = useNavigate();
 
     console.log("oncw 2")

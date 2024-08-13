@@ -1,18 +1,18 @@
 import motorPart from "../Pages/ProductPage/motor-part.png";
 
-const CartItem = () => {
+const CartItem = ({n, p, q, i}) => {
   return (
     <article>
       <div className="item-details">
         <div className="item-image">
-          <img src={motorPart} alt="item" />
+          <img src={i} alt="item" />
         </div>
         <div className="item-description">
-          <h6>Motor Part</h6>
-          <p>Rs.900.00</p>
+          <h6>{n}</h6>
+          <p>Rs {p}</p>
           <div className="quantity-details">
             <button>&#43;</button>
-            <p>1</p>
+            <p>{q}</p>
             <button>&#8722;</button>
           </div>
         </div>

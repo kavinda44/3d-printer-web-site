@@ -11,7 +11,7 @@ import Cart from "../Cart/Cart";
 
 function MainHome({ cartIsVisible, toggleCartVisibility }) {
   const [user, setUser] = useState(null);
-  const [Authenticated, setAuthenticated] = useContext(Context);
+  // const [Authenticated, setAuthenticated] = useContext(Context);
   const navigate = useNavigate();
 
   //   useEffect(() => {

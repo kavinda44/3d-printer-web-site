@@ -85,6 +85,7 @@ import AboutUs from "./Components/Pages/AboutUsPage/AboutUs";
 import { Product } from "./Components/Pages/ProductPage/Product";
 import contents from "./Components/Pages/ProductPage/contents";
 import Store from "./Components/Pages/StorePage/Store";
+import ProductDesc from "./Components/Pages/ProductPage/ProductDesc";
 
 export const Context = createContext();
 
@@ -95,6 +96,13 @@ function App() {
   const [Authenticated, setAuthenticated] = useState(false);
   const [cartIsVisible, setCartIsVisible] = useState(false);
   const navigate = useNavigate();
+
+  const [ide, setIde] = useState('');
+  const [name, setName] = useState('');
+  const [des, setDes] = useState('');
+  const [image, setImage] = useState('');
+  const [price, setPrice] = useState('');
+  
 
   useEffect(() => {
     try {
@@ -123,7 +131,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <Context.Provider value={[Authenticated, setAuthenticated]}>
+      <Context.Provider value={{Authenticated, setAuthenticated, ide, setIde, name, setName, des, setDes, image, setImage, price, setPrice}}>
         <Routes>
           {/* {Authenticated ? (
           <Route path='/home' element={<MainHome/>}/>
@@ -138,7 +146,7 @@ function App() {
                 <MainHome
                   cartIsVisible={cartIsVisible}
                   toggleCartVisibility={toggleCartVisibility}
-                />
+                /> 
               ) : (
                 <Navigate to="/" />
               )
@@ -164,6 +172,10 @@ function App() {
           <Route
             path="/contact"
             element={Authenticated ? <Contact /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/product"
+            element={Authenticated ? <ProductDesc name={name} desc={des} img={image} val={ide} pr={price}/> : <Navigate to="/" />}
           />
           <Route path="/" element={<LoginRegister />} />
           <Route path="/register" element={<RegisterPage />} />

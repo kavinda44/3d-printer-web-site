@@ -36,6 +36,8 @@ const Store = ({ cartIsVisible, toggleCartVisibility }) => {
             name={contents.name}
             price={contents.price}
             rating={contents.rating}
+            description={contents.desc}
+            ino={contents.id}
           />
         ))}
       </div>

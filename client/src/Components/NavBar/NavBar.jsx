@@ -8,7 +8,7 @@ import logo from "./logo.PNG";
 import "./NavBar.css";
 
 const NavBar = ({ toggleCartVisibility }) => {
-  const [, setAuthenticated] = useContext(Context);
+  const {setAuthenticated} = useContext(Context);
   const [visible, setVisible] = useState(true);
   const [isToggled, setIsToggled] = useState(false);
   const navigate = useNavigate();
@@ -46,6 +46,9 @@ const NavBar = ({ toggleCartVisibility }) => {
           </li>
           <li>
             <Link to={"/contact"}>Contact us</Link>
+          </li>
+          <li>
+            <Link to={"/product"}>Product</Link>
           </li>
           <li>
             <button className="btn" onClick={signout}>
